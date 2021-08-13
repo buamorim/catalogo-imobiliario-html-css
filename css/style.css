@@ -1,3 +1,101 @@
-body {
+/*css reset*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
   font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+  --orange: #8B4500;
+  --blue: #060d22;
+  --gray: #ededed;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(45deg, rgb(105, 42, 0), #8B4500 60%);
+}
+
+.content {
+  max-width: 1000px;
+  min-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+nav {
+  width: 100%;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 24px;
+  color: var(--blue);
+  cursor: pointer;
+  text-shadow: rgb(27, 18, 109) 1px 1px 3px;
+}
+
+.brand:hover {
+  color: #101aa1;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav ul li a {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #101aa1;
+}
+
+nav ul button {
+  border: 1px solid var(--blue);
+  background: transparent;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-left: 20px;
+  color: var(--blue);
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+nav ul button:hover {
+  transition: 0.6s;
+  background: var(--blue);
+  color: var(--orange);
+}
+
+.content .header-block {
+  max-width: 1000px !important;
+  min-width: 300px;
+  height: 450px;
+  background: var(--blue);
+  border radius: 8px;
+  box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.7);
 }
