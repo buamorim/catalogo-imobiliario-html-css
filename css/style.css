@@ -50,7 +50,7 @@ nav {
 }
 
 .brand:hover {
-  color: #101aa1;
+  color: #fff;
 }
 
 nav ul {
@@ -71,7 +71,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #101aa1;
+  color: #fff;
 }
 
 nav ul button {
@@ -183,4 +183,35 @@ section .filter-card {
 .title-wrapper-catalog {
   margin-top: 200px;
   padding-bottom: 20px;
+}
+
+section .card-wrapper {
+  max-width: 1000px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 30px;
+  padding-top: 50px;
+}
+
+section .card-item {
+  height: 400px;
+  background: var(--gray);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-content {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-item h3 {
+  width: 90%;
 }
