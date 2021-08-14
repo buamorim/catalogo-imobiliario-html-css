@@ -92,7 +92,7 @@ nav ul button:hover {
 }
 
 .content .header-block {
-  max-width: 1000px !important;
+  max-width: 1000px;
   min-width: 300px;
   height: 450px;
   background: var(--blue);
@@ -168,25 +168,30 @@ section .filter-card {
   border-radius: 0px 4px 4px 0px;
   border: none;
   background: var(--blue);
-  color: var(--orange);
+  color: #fff;
   font-size: 15px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s ease;
 }
 
+.title-wrapper-catalog h3 {
+  color: var(--orange);
+  font-weight: bold;
+}
+
 .search-button:hover {
-  color: var(--blue);
+  color: #fff;
   background: var(--orange);
 }
 
 .title-wrapper-catalog {
-  margin-top: 200px;
+  margin-top: 140px;
   padding-bottom: 20px;
 }
 
 section .card-wrapper {
-  max-width: 1000px;
+  max-width: 980px;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
@@ -195,7 +200,8 @@ section .card-wrapper {
 }
 
 section .card-item {
-  height: 400px;
+  height: 470px;
+  width: 310px;
   background: var(--gray);
   border-radius: 8px;
   display: flex;
@@ -212,6 +218,34 @@ section .card-item {
   justify-content: space-around;
 }
 
+.card-item img {
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
 .card-item h3 {
   width: 90%;
+}
+
+.card-item p {
+  width: 90%;
+  font-style: italic;
+  color: #00000070;
+}
+
+.card-item button {
+  width: 90%;
+  padding: 15px 0px;
+  margin-bottom: 7px;
+  border: none;
+  background: var(--blue);
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.card-item button:hover {
+  background: var(--orange);
 }
